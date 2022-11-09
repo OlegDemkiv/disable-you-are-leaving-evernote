@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Disable You are leaving Evernote",
+  "description": "Simple Chrome extension that skips the annoying message 'You are leaving Evernote' and made auto-redirect to website",
+  "version": "0.1.0",
+  "author": "Oleg Demkiv",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.evernote.com/OutboundRedirect.action*"
+      ]
+    }
+  ]
+}
